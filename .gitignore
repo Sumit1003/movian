@@ -1,0 +1,125 @@
+# -------------------------------------------------
+# 🔥 GLOBAL IGNORE (Both client + server)
+# -------------------------------------------------
+
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pnpm-error.log*
+logs/
+*.log
+*.log.*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+client/.env
+server/.env
+
+# Dist / Build Output
+dist/
+client/dist/
+server/dist/
+build/
+client/build/
+
+# Static cache
+.cache/
+.client-cache/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# -------------------------------------------------
+# 🔧 CLIENT (React + Vite)
+# -------------------------------------------------
+
+# Vite cache
+client/.vite/
+.vite/
+
+# Coverage results
+client/coverage/
+coverage/
+
+# Production build
+client/dist/
+
+# Local storage for tooling
+client/.eslintcache
+client/.stylelintcache
+
+# Debug screenshots (Playwright / Cypress)
+test-results/
+playwright-report/
+cypress/screenshots/
+cypress/videos/
+
+# -------------------------------------------------
+# 🔧 SERVER (Node + Express)
+# -------------------------------------------------
+
+server/.cache/
+server/build/
+server/dist/
+server/.tsbuildinfo
+
+# PM2 Logs
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Uploaded files (if any)
+uploads/
+server/uploads/
+
+# Database dumps
+*.sql
+*.sqlite
+*.db
+
+# -------------------------------------------------
+# 🛠 Editor / OS Files 
+# -------------------------------------------------
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# -------------------------------------------------
+# 🔥 OPTIONAL — Remove if you need these
+# -------------------------------------------------
+
+# Ignore build preview servers
+vite.config.ts.timestamp*
+vite.config.js.timestamp*
+
